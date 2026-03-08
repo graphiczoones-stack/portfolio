@@ -33,7 +33,17 @@
     color: var(--text-main);
     margin-bottom: 0.75rem;
     letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
+
+.verified-badge {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
 
 .footer-info p {
     max-width: 500px;

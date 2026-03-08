@@ -23,7 +23,7 @@ const Navbar = () => {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <header className="navbar">
+    <header className={`navbar ${isMobileMenuOpen ? 'menu-open' : ''}`}>
       <div className="nav-content">
         <Link to="/" className="nav-logo" onClick={() => setIsMobileMenuOpen(false)}>
           <img src="/logoo.svg" alt="Ziad Sadawy Logo" className="logo-img" />

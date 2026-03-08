@@ -23,7 +23,10 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    height: 100%;
+    justify-content: space-between;
 }
+
 
 .contact-method-item {
     display: flex;
