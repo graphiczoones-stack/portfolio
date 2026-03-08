@@ -15,6 +15,25 @@ const WhatsAppIcon = ({ size = 20 }) => (
     </svg>
 );
 
+const TikTokIcon = ({ size = 20 }) => (
+    <div
+        style={{
+            width: size,
+            height: size,
+            backgroundColor: 'currentColor',
+            maskImage: 'url(/tik-tok.png)',
+            WebkitMaskImage: 'url(/tik-tok.png)',
+            maskSize: 'contain',
+            WebkitMaskSize: 'contain',
+            maskRepeat: 'no-repeat',
+            WebkitMaskRepeat: 'no-repeat',
+            maskPosition: 'center',
+            WebkitMaskPosition: 'center',
+            display: 'inline-block'
+        }}
+    />
+);
+
 const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -77,7 +96,7 @@ const Contact = () => {
             link: 'https://wa.me/201157166373'
         },
         {
-            icon: <img src="/tiktok-48.ico" alt="TikTok" style={{ width: 20, height: 20, filter: 'brightness(0) invert(1)' }} />,
+            icon: <TikTokIcon />,
             label: 'TikTok',
             value: '@s3dawiy',
             link: 'https://www.tiktok.com/@s3dawiy'

@@ -3,15 +3,22 @@ import { Github, Linkedin, Instagram } from 'lucide-react';
 import './Footer.css';
 
 const TikTokIcon = ({ size = 20 }) => (
-    <svg
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-    >
-        <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.11-2.85-.56-4.16-1.57-.44 3.98-3.9 14.56-11.27 15.51C3.58 24.36.43 21.07.05 17.51c-.4-3.79 2.22-7.58 5.92-8.31V13.2c-1.89.35-3.05 2.1-2.9 3.98.15 1.88 1.72 3.32 3.6 3.17 1.88-.15 3.32-1.72 3.17-3.6V0h2.69z" />
-    </svg>
+    <div
+        style={{
+            width: size,
+            height: size,
+            backgroundColor: 'currentColor',
+            maskImage: 'url(/tik-tok.png)',
+            WebkitMaskImage: 'url(/tik-tok.png)',
+            maskSize: 'contain',
+            WebkitMaskSize: 'contain',
+            maskRepeat: 'no-repeat',
+            WebkitMaskRepeat: 'no-repeat',
+            maskPosition: 'center',
+            WebkitMaskPosition: 'center',
+            display: 'inline-block'
+        }}
+    />
 );
 
 const WhatsAppIcon = ({ size = 20 }) => (
@@ -35,7 +42,7 @@ const Footer = () => {
         { icon: <WhatsAppIcon size={20} />, url: 'https://wa.me/201157166373', label: 'WhatsApp' },
         { icon: <Instagram size={20} />, url: 'https://www.instagram.com/s3dawiy/', label: 'Instagram' },
         {
-            icon: <img src="/tiktok-48.ico" alt="TikTok" style={{ width: 20, height: 20, filter: 'brightness(0) invert(1)' }} />,
+            icon: <TikTokIcon size={20} />,
             url: 'https://www.tiktok.com/@s3dawiy',
             label: 'TikTok'
         },
@@ -71,7 +78,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; {currentYear} Ziad Mahmoud Mohammed Sadawy. All rights reserved.</p>
+                    <p>&copy; {currentYear} S3DAWY. All rights reserved.</p>
                 </div>
             </div>
         </footer>

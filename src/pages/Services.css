@@ -1,6 +1,6 @@
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
 }
 
@@ -231,5 +231,22 @@
 @media (max-width: 500px) {
     .modal-actions {
         flex-direction: column-reverse;
+    }
+
+    .modal-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .modal-header h3 {
+        font-size: 1.4rem;
+    }
+
+    .service-redirect-title {
+        font-size: 1.1rem;
+        margin: 1rem 0;
+    }
+
+    .modal-body p {
+        font-size: 0.9rem;
     }
 }
