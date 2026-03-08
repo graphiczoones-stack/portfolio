@@ -55,7 +55,6 @@ const Footer = () => {
                     <img src="/logoo.svg" alt="Ziad Sadawy Logo" className="footer-logo" />
                     <h3>
                         ZIAD SADAWY
-                        <img src="/Verified.png" alt="Verified" className="verified-badge" />
                     </h3>
                     <p>Web Developer focused on creating modern, professional, and visually stunning web experiences.</p>
                 </div>

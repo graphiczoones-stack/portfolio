@@ -27,7 +27,10 @@ const Navbar = () => {
       <div className="nav-content">
         <Link to="/" className="nav-logo" onClick={() => setIsMobileMenuOpen(false)}>
           <img src="/logoo.svg" alt="Ziad Sadawy Logo" className="logo-img" />
-          <span style={{ marginTop: '6px' }}>ZIAD S3DAWY</span>
+          <span style={{ marginTop: '6px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+            ZIAD S3DAWY
+            <img src="/Verified.png" alt="Verified" className="verified-badge-nav" />
+          </span>
         </Link>
 
         <div className="desktop-nav">
